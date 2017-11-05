@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    }
+]

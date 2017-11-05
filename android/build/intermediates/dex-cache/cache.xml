@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_efdb97a3a6636d2f6e54c73b2a0dcbb4774e45d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_95c6240811b59c745d429918c7a8cfb6c224c4a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_cce342a529a7fe33c3ad62bf41e2855c1a6ec107.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.artemzin.rxjava/proguard-rules/1.3.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2de3ae794dbe442c25c5c245c0d1bcc0ccb5fd18">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.artemzin.rxjava-proguard-rules-1.3.1.0_e95dbe12a160937923aba5cc57cb5042ed74c89f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_aba62f4d676e5d26fcbd95a258d1ca217a45c957.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.polidea.rxandroidble/rxandroidble/1.4.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="245b17d23de5fc47f7038c58ba3cc851dc80b723">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.polidea.rxandroidble-rxandroidble-1.4.1_4c351ba369a75c9a65d8bc13c2e342b65fa7240f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_478c1e6c77a73cbfc73edd4c4451bc2dabaf15b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_c51f545472358bdff69128955537f52fe2d86631.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/AndroidInformationBoardcaster/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/AndroidInformationBoardcaster-react-native-vector-icons-unspecified_c0d9d312316f6bb0697b11416d00e0e85c07cafa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_d98e68a5f73a32122072ffbb107cf7c71611aeee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_656b78b26aab425bac765d0d57ae4141be754175.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_8289a341059e5b1887e0da7a02aba92b82756100.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_0af043b706c582081d1920a43510aa50db2c583f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_2685b613c4437cd48a2210d7d891421bea77eb34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_35b5febf4f4461416d2197e0bc069c67942cc012.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_b4685538ef55cebf34108a4a2ef1cc6006e772ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/AndroidInformationBoardcaster/react-native-fetch-blob/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="74da086764638fe99a33e956341f3e53032e20fa">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/AndroidInformationBoardcaster-react-native-fetch-blob-unspecified_7ecf9a44f818884eeaacca511a12d2dfa943782a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_299c07facf08f510823702458971631bc9973f2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_512582364c5d4a391af4ea3ba08db0167ac48999.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_f52f601c7466f71d03ed6a09821f8eae4e305051.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.8/55a1aa1cdcfd06b9950ca856e2bc2790e105146a/dagger-2.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="55a1aa1cdcfd06b9950ca856e2bc2790e105146a">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/dagger-2.8_5e38a945b4781f12667b002bfa2ec753fe0b81ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_59cc519cac92e6f477b83482995da7ec77b53a82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.artemzin.rxjava/proguard-rules/1.3.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2de3ae794dbe442c25c5c245c0d1bcc0ccb5fd18">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.artemzin.rxjava-proguard-rules-1.3.1.0_1e630447c45dd02d955480fd89b94c20a4e64201.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_0e3651c444fa02b28ee3245c96612906801d8701.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_ae3f906d76a5b7fafc4339678a7113d5d62330f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/AndroidInformationBoardcaster/react-native-ble-plx/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fb5020e0ed96c28196631c25925185314b31a4e1">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/AndroidInformationBoardcaster-react-native-ble-plx-unspecified_90c6538f5e7f4c1dc724f33141775d1a99ffc1c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_28bf2acad9fa1b5899b1f803939104826a7ab12c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.jakewharton.rxrelay/rxrelay/1.2.0/a53b8b8ef1a5ec8ff75afca24fc689b71892b44f/rxrelay-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a53b8b8ef1a5ec8ff75afca24fc689b71892b44f">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/rxrelay-1.2.0_78230f0b2ff2d81321fb9d352faaad160a95948e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_6463e76deb9d886da5d3180cfe5ec977c6437c4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_01648748f6f056648bf92b5da335bf0729552b38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0b693f1512262d8e4923e7f1cb2040b0897f9581">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.50.0_8783aced4ade29cefd85db9c9a42303ce2d2f8ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.polidea.rxandroidble/rxandroidble/1.4.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="245b17d23de5fc47f7038c58ba3cc851dc80b723">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.polidea.rxandroidble-rxandroidble-1.4.1_d4166944d8811d81f06d020a8e10ab94cb286117.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_2efc420771f0ee24d319115cc751e119af938f4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_b919198453239fdec82bf9d83936256ce6bf3292.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0b693f1512262d8e4923e7f1cb2040b0897f9581">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.50.0_ea8655927536343668dae8c2b660811b8146f0ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_f83c98e94915e0035a02dbe7f77a7fe890c3cd5d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_6c6c4e703f8c234bbf13e8329ec36e1f73fb8082.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/AndroidInformationBoardcaster/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/AndroidInformationBoardcaster-react-native-vector-icons-unspecified_7549baad9ff6dbb333f715fdafd6a0fd72f9946a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/AndroidInformationBoardcaster/react-native-ble-plx/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fb5020e0ed96c28196631c25925185314b31a4e1">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/AndroidInformationBoardcaster-react-native-ble-plx-unspecified_36312e6691a380b5897653692c568f79a371790a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_1fb21835bbf20a169c2db19cf97b0835ef6c06b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_a645eb3abada6147166080c27ce7788095192eee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_cfee3df8ec611c626b31b48a752efa096be8e1a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/AndroidInformationBoardcaster/react-native-fetch-blob/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="74da086764638fe99a33e956341f3e53032e20fa">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/AndroidInformationBoardcaster-react-native-fetch-blob-unspecified_d4f0e09d9e9c67d8ca4eb08a66058527ee62f873.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_41ce892cc85635baece5c30b1e46b77d872a88e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_c8a7a687774e54665c201a18328dbec2cac09963.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_6d53a9cd7c80ae74f58b2f781c511a3d0319011d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.3.1/2cfd8487e367f24c3529efafc08a9d584292c60d/rxjava-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2cfd8487e367f24c3529efafc08a9d584292c60d">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/rxjava-1.3.1_bfa5c757097aa966c187d9a7e3ec24b341b7afd2.jar" />
+    </item>
+
+</items>
