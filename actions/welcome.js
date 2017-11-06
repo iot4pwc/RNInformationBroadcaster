@@ -27,7 +27,7 @@ export const checkin = (isHost) => {
 	}
 }
 
-const scanBeacons = (fetchedUuidList) => {
+const scanBeacons = () => {
 	const bleManager = new BleManager();
 	const beaconSet = new Set();
 	let stop = false;
@@ -38,16 +38,20 @@ const scanBeacons = (fetchedUuidList) => {
         
         // TODO: figure out when to stop
         stop = true
-        if (fetchedUuidList.includes(device.id)) {
-          beaconSet.add(device.id);
-          // TODO: stop scanning when done
-          if (stop) {
-          	bleManager.stopDeviceScan();	
-          }
-        }
+		if (stop) {
+			bleManager.stopDeviceScan();	
+		} else {
+	        if (false) {
+	            beaconSet.add(device.id);
+	            // TODO: stop scanning when done
+	        }			
+		}  
+
     });	
     return Array.from(beaconSet);
 }
+
+
 
 const updateBeacons = (scannedUuidList) => {
 	return {

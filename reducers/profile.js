@@ -3,7 +3,7 @@ import { ProfileMap } from '../constants/common';
 
 const initialState = {
     company: '',
-    dateOfBirth: '',
+    age: '',
     firstName: '',
     isModalVisible: false,
     isProfileCompleted: false,
@@ -30,6 +30,12 @@ export const profile = (state = initialState, action) => {
             }
         }
         case PROFILE_ACTIONS.UPDATE_PROFILE: {
+            console.log(action.profile);
+
+            if (action.profile.profilePicture === null) {
+                action.profile.profilePicture = './profile_holder.png';
+            }
+
             let nextState = {
             	...state,
             	...action.profile

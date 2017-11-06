@@ -15,6 +15,7 @@ export default class ProfileForm extends React.Component {
 					onChangeText={(newContent) => onChangeText(newContent)}
 					ref={(ref) => refFunc(ref)}
 					onSubmitEditing={onSubmitEditing}
+					value={content}
 				/>
 				<FormValidationMessage
 					labelStyle={content ? styles.invisibleErrMsgStyle : styles.visibleErrMsgStyle}>
