@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 export default StyleSheet.create({
   container: {
@@ -11,11 +13,12 @@ export default StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row'
   },
-  row: {
-    flexDirection:'row',
-    margin:15,
-    marginBottom:0,
-    marginTop:5,
-    alignItems:'flex-end'
-  }
+  avartar: {
+    width: width,
+    height: width
+  },
+  scrollImage: {
+    width: width / 3,
+    height: width / 3
+  }  
 })

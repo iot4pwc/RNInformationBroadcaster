@@ -8,9 +8,30 @@ export const ProfileMap = {
 	user_email: ProflePrefix + "user_email",
 	firstName: ProflePrefix + "firstName",
 	lastName: ProflePrefix + "lastName",
-	dateOfBirth: ProflePrefix + "dateOfBirth",
+	age: ProflePrefix + "age",
 	resumeLink: ProflePrefix + "resumeLink",
 	profilePicture: ProflePrefix + "profilePicture",
 	position: ProflePrefix + "position",
 	company: ProflePrefix + "company"
+};
+
+export const ProfileAttributesList = [
+	'firstName',
+	'lastName',
+	'age',
+	'company',
+	'position',
+	'user_email',
+	'resumeLink'
+];
+
+export const DBProfileAttrMap = {
+	'firstName': 'FIRST NAME',
+	'lastName': 'LAST NAME',
+	'age': 'AGE',
+	'company': 'COMPANY',
+	'position': 'POSITION',
+	'user_email': 'EMAIL',
+	'resumeLink': 'RESUME LINK'
 }
+

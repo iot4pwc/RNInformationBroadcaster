@@ -1,9 +1,13 @@
+import actions from '../../actions';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { CHECKIN_COLOR } from '../../constants/common';
 import React from 'react';
+import styles from './styles';
+import { BackHandler } from "react-native";
+import { bindActionCreators } from 'redux';
+import { CHECKIN_COLOR } from '../../constants/common';
+import { connect } from 'react-redux';
 import {
   Button,
-  Dimensions,
   Image,
   Modal,
   ScrollView,
@@ -12,11 +16,8 @@ import {
   TouchableHighlight,
   View
 } from 'react-native';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import actions from '../../actions';
-import styles from './styles';
-import { BackHandler } from "react-native";
+import ProfileForm from '../../components/form';
+import { ProfileAttributesList, DBProfileAttrMap } from '../../constants/common';
 
 class Profile extends React.Component {
   static navigationOptions = {
@@ -30,19 +31,15 @@ class Profile extends React.Component {
     ),
   }
 
-  componentWillMount = () => {
-    BackHandler.removeEventListener("hardwareBackPress", this.onBackPress);
+  componentDidMount = () => {
+    BackHandler.addEventListener("hardwareBackPress", this.onBackPress);
     const { fetchProfile } = this.props;
-    fetchProfile();
+    fetchProfile();    
   }
 
-  onBackPress = () => {
-    const { toggleModal, isModalVisible } = this.props;
-    if (isModalVisible) {
-      console.log('off');
-      toggleModal();
-    }
-  }
+  componentWillUnmount = () => {
+    BackHandler.removeEventListener("hardwareBackPress", this.onBackPress);
+  }   
 
   _handleSelectPhoto = (uri) => {
     return () => {
@@ -52,6 +49,14 @@ class Profile extends React.Component {
     }
   }
 
+  _handleProfileChange = (key, newContent) => {
+    console.log(newContent);
+    const { updateOneProfileAttr } = this.props;
+    updateOneProfileAttr(key, newContent);
+  }
+
+  formRefs = {};
+
   render() {
     const {
         isModalVisible,
@@ -60,25 +65,37 @@ class Profile extends React.Component {
         selectPhoto,
         toggleModal
     } = this.props;
-    const { width } = Dimensions.get('window');
 
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <TouchableHighlight onPress={toggleModal}>
           <Image
             resizeMode="cover"
-            style={{
-              width: width,
-              height: width
-            }}
+            style={styles.avartar}
             source={profilePicture === './profile_holder.png' ? require('./profile_holder.png') : {uri: profilePicture}}
           />
-        </TouchableHighlight>    
+        </TouchableHighlight>
+        <View>
+          {
+            ProfileAttributesList.map((key, idx) => {
+              return (
+                <ProfileForm
+                  key={idx}
+                  refFunc={(ref) => {this.formRefs[idx] = ref}}
+                  header={DBProfileAttrMap[key]}
+                  content={this.props[key]}
+                  onChangeText={(newContent) => this._handleProfileChange(key, newContent)}
+                  onSubmitEditing={() => idx < ProfileAttributesList.length - 1 && this.formRefs[idx + 1].focus()}
+                />
+              );
+            })
+          }
+        </View>
         <Modal
           animationType={"slide"}
           transparent={false}
           visible={isModalVisible}
-          onRequestClose={() => console.log('closed')}
+          onRequestClose={() => toggleModal()}
         >
           <View style={styles.modalContainer}>          
             <Button
@@ -95,10 +112,7 @@ class Profile extends React.Component {
                       key={idx}
                     >
                       <Image
-                        style={{
-                          width: width/3,
-                          height: width/3
-                        }}
+                        style={styles.scrollImage}
                         source={{uri: photo.node.image.uri}}
                       />        
                     </TouchableHighlight>              
@@ -109,7 +123,7 @@ class Profile extends React.Component {
           </View>
         </Modal>
 
-      </View>
+      </ScrollView>
     );
   }
 }

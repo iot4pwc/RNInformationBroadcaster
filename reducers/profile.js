@@ -1,4 +1,5 @@
 import { PROFILE_ACTIONS } from '../constants/actionTypes';
+import { ProfileMap } from '../constants/common';
 
 const initialState = {
     company: '',
@@ -14,6 +15,10 @@ const initialState = {
     user_email: ''	
 }
 
+const isProfileCompleted =(state) => {
+    return Object.keys(ProfileMap).map(key => state[key]).filter(attr => attr).length == Object.keys(ProfileMap).length;
+}
+
 export const profile = (state = initialState, action) => {
     switch (action.type) {
         case PROFILE_ACTIONS.TOGGLE_MODAL: {
@@ -25,20 +30,15 @@ export const profile = (state = initialState, action) => {
             }
         }
         case PROFILE_ACTIONS.UPDATE_PROFILE: {
-            if (!action.profile.profilePicture) {
-                action.profile.profilePicture = './profile_holder.png';
-            }
-
-            return {
+            let nextState = {
             	...state,
             	...action.profile
-            }
-        }
-        case PROFILE_ACTIONS.UPDATE_PROFILE_FLAG: {
+            };
+
             return {
-            	...state,
-            	isProfileCompleted: true
-            }
+                ...nextState,
+                isProfileCompleted :isProfileCompleted(nextState)
+            };
         }
         case PROFILE_ACTIONS.UPDATE_PHOTOS: {
             return {

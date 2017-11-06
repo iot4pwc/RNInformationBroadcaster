@@ -27,11 +27,6 @@ class Welcome extends React.Component {
     ),
   }
 
-  componentDidMount = () => {
-    const { fetchUUIDs } = this.props;
-    fetchUUIDs();
-  }
-
   _handleOnPress = (isHost) => {
     const { checkin } = this.props;
     return () => checkin(isHost);

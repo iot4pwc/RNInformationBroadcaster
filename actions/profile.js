@@ -7,12 +7,7 @@ export const fetchProfile = () => {
 	return (dispatch, getState) => {
 		let profileP = loadItems();
 		profileP.then((profile) => {
-			dispatch(updateProfile(profile));
-			if (isProfileCompleted(getState().profile)) {
-				dispatch({
-					type: PROFILE_ACTIONS.UPDATE_PROFILE_FLAG			
-				})
-			}			
+			dispatch(updateProfile(profile));		
 		})
 
 	}
@@ -37,20 +32,21 @@ export const toggleModal = () => {
 }
 
 export const selectPhoto = (imageURL) => {
-	return (dispatch, getState) => {
-		try {
-			setItem('profilePicture', imageURL);
-			dispatch(updateProfile({
-				profilePicture: imageURL
-			}));
-		} catch (error) {
-			console.log('error storing image');
-		}
+	return (dispatch, getState) => {		
+		setItem('profilePicture', imageURL);
+		dispatch(updateProfile({
+			profilePicture: imageURL
+		}));
 	}
 }
 
-const isProfileCompleted =(state) => {
-	return Object.keys(ProfileMap).map(key => state[key]).filter(attr => attr != undefined).length == Object.keys(ProfileMap).length;
+export const updateOneProfileAttr = (key, value) => {
+	return (dispatch, getState) => {
+		setItem(ProfileMap[key], value);
+		const profile = {};
+		profile[key] = value;
+		dispatch(updateProfile(profile));
+	}
 }
 
 const updateProfile = (profile) => {
