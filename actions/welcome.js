@@ -7,12 +7,14 @@ import { Alert, AsyncStorage, CameraRoll } from 'react-native';
 export const checkin = (isHost) => {
 	return (dispatch, getState) => {
 		if (getState().profile.isProfileCompleted) {
-			scanBeacons((sortedUuidList) => fetchMeetingRoom(sortedUuidList).then(responseJson => {
+			dispatch({ type: WELCOME_ACTIONS.TOGGLE_LOADING });
+			scanBeacons((sortedUuidList) => fetchMeetingRoom(sortedUuidList, dispatch).then(responseJson => {
 				dispatch({
 					type: WELCOME_ACTIONS.UPDATE_MEETING_ROOMS,
 					meetingRoomsList: responseJson.result
-				});
+				});				
 				dispatch(NavigationActions.navigate({ routeName: 'Rooms' }));
+				dispatch({ type: WELCOME_ACTIONS.TOGGLE_LOADING });
 			}));
 		} else {
 			Alert.alert(
@@ -25,18 +27,26 @@ export const checkin = (isHost) => {
 					}))
 				}]
 			);
-
 		}
 	}
 }
 
-const fetchMeetingRoom = (sortedUuidList) => {
+const fetchMeetingRoom = (sortedUuidList, dispatch) => {
 	try {
 		return asyncGetWithJson('mapUUIDs', {
 			uuid: sortedUuidList.join(',')
+		}, () => {
+			dispatch({ type: WELCOME_ACTIONS.TOGGLE_LOADING });
+			Alert.alert(
+				'No meeting rooms found',
+				'Please find the room beacon and try again.',
+				[{
+					text: 'Ok'
+				}]
+			);				
 		});
 	} catch (error) {
-		console.log('error fetching meeting room info');
+		console.err(error);
 	}
 }
 

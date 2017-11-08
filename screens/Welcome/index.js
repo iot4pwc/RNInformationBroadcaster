@@ -10,6 +10,7 @@ import {
   View
 } from 'react-native';
 import styles from './styles';
+import Loading from '../../components/loading';
 import PropTypes from 'prop-types';
 
 class Welcome extends React.Component {
@@ -30,28 +31,33 @@ class Welcome extends React.Component {
   }
 
   render() {
+    const { isLoading } = this.props;
     return (
       <ScrollView style={styles.container}>
-          <TouchableHighlight onPress={this._handleOnPress(false)}>
-            <Image
-              resizeMode="stretch"
-              style={styles.buttonView}
-              source={require('./checkin.jpeg')}
-            />        
-          </TouchableHighlight>
-          <TouchableHighlight onPress={this._handleOnPress(true)}>
-            <Image
-              resizeMode="stretch"
-              style={styles.buttonView}
-              source={require('./hostCheckin.jpeg')}
-            />        
-          </TouchableHighlight>         
+        <TouchableHighlight onPress={this._handleOnPress(false)}>
+          <Image
+            resizeMode="stretch"
+            style={styles.buttonView}
+            source={require('./checkin.jpeg')}
+          />        
+        </TouchableHighlight>
+        <TouchableHighlight onPress={this._handleOnPress(true)}>
+          <Image
+            resizeMode="stretch"
+            style={styles.buttonView}
+            source={require('./hostCheckin.jpeg')}
+          />        
+        </TouchableHighlight>
+        <View>
+          <Loading isLoading={isLoading}/>
+        </View>         
       </ScrollView>
     );
   }
 }
 
 Welcome.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
   checkin: PropTypes.func.isRequired
 }
 

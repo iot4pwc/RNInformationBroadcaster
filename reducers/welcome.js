@@ -1,6 +1,7 @@
 import { WELCOME_ACTIONS } from '../constants/actionTypes';
 
 const initialState = {
+	isLoading: false,
 	isHost: false,
 	meetingRoomsList: []
 };
@@ -19,6 +20,13 @@ export const welcome = (state = initialState, action) => {
 				isHost: action.isHost
 			}
 		}
+		case WELCOME_ACTIONS.TOGGLE_LOADING: {
+			const isLoading = !state.isLoading;
+			return {
+				...state,
+				isLoading: isLoading
+			}
+		}		
 		default: {
 			return {
 				...state

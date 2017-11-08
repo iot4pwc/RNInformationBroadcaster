@@ -8,20 +8,20 @@
         "source": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_screen_toolbar.xml"
+        "merged": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",

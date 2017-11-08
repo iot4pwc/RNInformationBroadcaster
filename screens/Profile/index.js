@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './styles';
 import { BackHandler } from "react-native";
 import { bindActionCreators } from 'redux';
-import { CHECKIN_COLOR } from '../../constants/common';
+import { CHECKIN_COLOR, ProfileMap } from '../../constants/common';
 import { connect } from 'react-redux';
 import {
   Button,
@@ -44,8 +44,8 @@ class Profile extends React.Component {
 
   _handleSelectPhoto = (uri) => {
     return () => {
-      const { selectPhoto, toggleModal } = this.props;
-      selectPhoto(uri);
+      const { updateOneProfileAttr, toggleModal } = this.props;
+      updateOneProfileAttr('profilePicture', uri);
       toggleModal();
     }
   }
@@ -62,7 +62,6 @@ class Profile extends React.Component {
         isModalVisible,
         photos,
         profile,
-        selectPhoto,
         toggleModal
     } = this.props;
 
@@ -134,7 +133,6 @@ Profile.propTypes = {
   isProfileCompleted: PropTypes.bool,
   photos: PropTypes.array,
   profile: PropTypes.object,
-  selectPhoto: PropTypes.func.isRequired,
   toggleModal: PropTypes.func.isRequired,
   updateOneProfileAttr: PropTypes.func.isRequired,
 }

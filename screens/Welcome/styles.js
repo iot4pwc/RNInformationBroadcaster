@@ -8,6 +8,6 @@ export default StyleSheet.create({
   },
   buttonView: {
     height: height / 2,
-    width, width
+    width: width
   }
 });

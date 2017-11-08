@@ -206,6 +206,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
          */
         public static final int actualImageScaleType=0x7f01003a;
@@ -677,6 +678,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
          */
         public static final int failureImageScaleType=0x7f010036;
@@ -963,6 +965,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
          */
         public static final int placeholderImageScaleType=0x7f010032;
@@ -1017,6 +1020,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
          */
         public static final int progressBarImageScaleType=0x7f010038;
@@ -1073,6 +1077,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
          */
         public static final int retryImageScaleType=0x7f010034;
@@ -1813,96 +1818,97 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f02003e;
     }
     public static final class id {
-        public static final int action0=0x7f0d0058;
-        public static final int action_bar=0x7f0d0048;
+        public static final int action0=0x7f0d0059;
+        public static final int action_bar=0x7f0d0049;
         public static final int action_bar_activity_content=0x7f0d0000;
-        public static final int action_bar_container=0x7f0d0047;
-        public static final int action_bar_root=0x7f0d0043;
+        public static final int action_bar_container=0x7f0d0048;
+        public static final int action_bar_root=0x7f0d0044;
         public static final int action_bar_spinner=0x7f0d0001;
-        public static final int action_bar_subtitle=0x7f0d002c;
-        public static final int action_bar_title=0x7f0d002b;
-        public static final int action_context_bar=0x7f0d0049;
-        public static final int action_divider=0x7f0d005c;
+        public static final int action_bar_subtitle=0x7f0d002d;
+        public static final int action_bar_title=0x7f0d002c;
+        public static final int action_context_bar=0x7f0d004a;
+        public static final int action_divider=0x7f0d005d;
         public static final int action_menu_divider=0x7f0d0002;
         public static final int action_menu_presenter=0x7f0d0003;
-        public static final int action_mode_bar=0x7f0d0045;
-        public static final int action_mode_bar_stub=0x7f0d0044;
-        public static final int action_mode_close_button=0x7f0d002d;
-        public static final int activity_chooser_view_content=0x7f0d002e;
-        public static final int alertTitle=0x7f0d0038;
-        public static final int always=0x7f0d0025;
-        public static final int beginning=0x7f0d0022;
-        public static final int buttonPanel=0x7f0d003e;
-        public static final int cancel_action=0x7f0d0059;
-        public static final int catalyst_redbox_title=0x7f0d0067;
+        public static final int action_mode_bar=0x7f0d0046;
+        public static final int action_mode_bar_stub=0x7f0d0045;
+        public static final int action_mode_close_button=0x7f0d002e;
+        public static final int activity_chooser_view_content=0x7f0d002f;
+        public static final int alertTitle=0x7f0d0039;
+        public static final int always=0x7f0d0026;
+        public static final int beginning=0x7f0d0023;
+        public static final int buttonPanel=0x7f0d003f;
+        public static final int cancel_action=0x7f0d005a;
+        public static final int catalyst_redbox_title=0x7f0d0068;
         public static final int center=0x7f0d001a;
         public static final int centerCrop=0x7f0d001b;
         public static final int centerInside=0x7f0d001c;
-        public static final int checkbox=0x7f0d0040;
-        public static final int chronometer=0x7f0d005f;
-        public static final int collapseActionView=0x7f0d0026;
-        public static final int contentPanel=0x7f0d0039;
-        public static final int custom=0x7f0d003d;
-        public static final int customPanel=0x7f0d003c;
-        public static final int decor_content_parent=0x7f0d0046;
-        public static final int default_activity_button=0x7f0d0031;
+        public static final int checkbox=0x7f0d0041;
+        public static final int chronometer=0x7f0d0060;
+        public static final int collapseActionView=0x7f0d0027;
+        public static final int contentPanel=0x7f0d003a;
+        public static final int custom=0x7f0d003e;
+        public static final int customPanel=0x7f0d003d;
+        public static final int decor_content_parent=0x7f0d0047;
+        public static final int default_activity_button=0x7f0d0032;
         public static final int disableHome=0x7f0d000e;
-        public static final int edit_query=0x7f0d004a;
-        public static final int end=0x7f0d0023;
-        public static final int end_padder=0x7f0d0064;
-        public static final int expand_activities_button=0x7f0d002f;
-        public static final int expanded_menu=0x7f0d003f;
-        public static final int fitCenter=0x7f0d001d;
-        public static final int fitEnd=0x7f0d001e;
-        public static final int fitStart=0x7f0d001f;
-        public static final int fitXY=0x7f0d0020;
-        public static final int focusCrop=0x7f0d0021;
-        public static final int fps_text=0x7f0d0057;
+        public static final int edit_query=0x7f0d004b;
+        public static final int end=0x7f0d0024;
+        public static final int end_padder=0x7f0d0065;
+        public static final int expand_activities_button=0x7f0d0030;
+        public static final int expanded_menu=0x7f0d0040;
+        public static final int fitBottomStart=0x7f0d001d;
+        public static final int fitCenter=0x7f0d001e;
+        public static final int fitEnd=0x7f0d001f;
+        public static final int fitStart=0x7f0d0020;
+        public static final int fitXY=0x7f0d0021;
+        public static final int focusCrop=0x7f0d0022;
+        public static final int fps_text=0x7f0d0058;
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d000f;
-        public static final int icon=0x7f0d0033;
-        public static final int ifRoom=0x7f0d0027;
-        public static final int image=0x7f0d0030;
-        public static final int info=0x7f0d0063;
-        public static final int line1=0x7f0d005d;
-        public static final int line3=0x7f0d0061;
+        public static final int icon=0x7f0d0034;
+        public static final int ifRoom=0x7f0d0028;
+        public static final int image=0x7f0d0031;
+        public static final int info=0x7f0d0064;
+        public static final int line1=0x7f0d005e;
+        public static final int line3=0x7f0d0062;
         public static final int listMode=0x7f0d000b;
-        public static final int list_item=0x7f0d0032;
-        public static final int media_actions=0x7f0d005b;
-        public static final int middle=0x7f0d0024;
+        public static final int list_item=0x7f0d0033;
+        public static final int media_actions=0x7f0d005c;
+        public static final int middle=0x7f0d0025;
         public static final int multiply=0x7f0d0015;
-        public static final int never=0x7f0d0028;
+        public static final int never=0x7f0d0029;
         public static final int none=0x7f0d0010;
         public static final int normal=0x7f0d000c;
-        public static final int parentPanel=0x7f0d0035;
+        public static final int parentPanel=0x7f0d0036;
         public static final int progress_circular=0x7f0d0005;
         public static final int progress_horizontal=0x7f0d0006;
-        public static final int radio=0x7f0d0042;
+        public static final int radio=0x7f0d0043;
         public static final int react_test_id=0x7f0d0007;
-        public static final int rn_frame_file=0x7f0d0066;
-        public static final int rn_frame_method=0x7f0d0065;
-        public static final int rn_redbox_copy_button=0x7f0d006e;
-        public static final int rn_redbox_dismiss_button=0x7f0d006c;
-        public static final int rn_redbox_line_separator=0x7f0d0069;
-        public static final int rn_redbox_loading_indicator=0x7f0d006a;
-        public static final int rn_redbox_reload_button=0x7f0d006d;
-        public static final int rn_redbox_report_button=0x7f0d006f;
-        public static final int rn_redbox_report_label=0x7f0d006b;
-        public static final int rn_redbox_stack=0x7f0d0068;
+        public static final int rn_frame_file=0x7f0d0067;
+        public static final int rn_frame_method=0x7f0d0066;
+        public static final int rn_redbox_copy_button=0x7f0d006f;
+        public static final int rn_redbox_dismiss_button=0x7f0d006d;
+        public static final int rn_redbox_line_separator=0x7f0d006a;
+        public static final int rn_redbox_loading_indicator=0x7f0d006b;
+        public static final int rn_redbox_reload_button=0x7f0d006e;
+        public static final int rn_redbox_report_button=0x7f0d0070;
+        public static final int rn_redbox_report_label=0x7f0d006c;
+        public static final int rn_redbox_stack=0x7f0d0069;
         public static final int screen=0x7f0d0016;
-        public static final int scrollView=0x7f0d003a;
-        public static final int search_badge=0x7f0d004c;
-        public static final int search_bar=0x7f0d004b;
-        public static final int search_button=0x7f0d004d;
-        public static final int search_close_btn=0x7f0d0052;
-        public static final int search_edit_frame=0x7f0d004e;
-        public static final int search_go_btn=0x7f0d0054;
-        public static final int search_mag_icon=0x7f0d004f;
-        public static final int search_plate=0x7f0d0050;
-        public static final int search_src_text=0x7f0d0051;
-        public static final int search_voice_btn=0x7f0d0055;
-        public static final int select_dialog_listview=0x7f0d0056;
-        public static final int shortcut=0x7f0d0041;
+        public static final int scrollView=0x7f0d003b;
+        public static final int search_badge=0x7f0d004d;
+        public static final int search_bar=0x7f0d004c;
+        public static final int search_button=0x7f0d004e;
+        public static final int search_close_btn=0x7f0d0053;
+        public static final int search_edit_frame=0x7f0d004f;
+        public static final int search_go_btn=0x7f0d0055;
+        public static final int search_mag_icon=0x7f0d0050;
+        public static final int search_plate=0x7f0d0051;
+        public static final int search_src_text=0x7f0d0052;
+        public static final int search_voice_btn=0x7f0d0056;
+        public static final int select_dialog_listview=0x7f0d0057;
+        public static final int shortcut=0x7f0d0042;
         public static final int showCustom=0x7f0d0011;
         public static final int showHome=0x7f0d0012;
         public static final int showTitle=0x7f0d0013;
@@ -1910,21 +1916,21 @@ containing a value of this type.
         public static final int src_atop=0x7f0d0017;
         public static final int src_in=0x7f0d0018;
         public static final int src_over=0x7f0d0019;
-        public static final int status_bar_latest_event_content=0x7f0d005a;
-        public static final int submit_area=0x7f0d0053;
+        public static final int status_bar_latest_event_content=0x7f0d005b;
+        public static final int submit_area=0x7f0d0054;
         public static final int tabMode=0x7f0d000d;
-        public static final int text=0x7f0d0062;
-        public static final int text2=0x7f0d0060;
-        public static final int textSpacerNoButtons=0x7f0d003b;
-        public static final int time=0x7f0d005e;
-        public static final int title=0x7f0d0034;
-        public static final int title_template=0x7f0d0037;
-        public static final int topPanel=0x7f0d0036;
+        public static final int text=0x7f0d0063;
+        public static final int text2=0x7f0d0061;
+        public static final int textSpacerNoButtons=0x7f0d003c;
+        public static final int time=0x7f0d005f;
+        public static final int title=0x7f0d0035;
+        public static final int title_template=0x7f0d0038;
+        public static final int topPanel=0x7f0d0037;
         public static final int up=0x7f0d0009;
         public static final int useLogo=0x7f0d0014;
         public static final int view_tag_native_id=0x7f0d000a;
-        public static final int withText=0x7f0d0029;
-        public static final int wrap_content=0x7f0d002a;
+        public static final int withText=0x7f0d002a;
+        public static final int wrap_content=0x7f0d002b;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0b0001;
@@ -3361,6 +3367,7 @@ containing a value of this type.
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
           @attr name com.androidinformationboardcaster:actualImageScaleType
         */
@@ -3419,6 +3426,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
           @attr name com.androidinformationboardcaster:failureImageScaleType
         */
@@ -3463,6 +3471,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
           @attr name com.androidinformationboardcaster:placeholderImageScaleType
         */
@@ -3521,6 +3530,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
           @attr name com.androidinformationboardcaster:progressBarImageScaleType
         */
@@ -3555,6 +3565,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
 </table>
           @attr name com.androidinformationboardcaster:retryImageScaleType
         */
@@ -4524,13 +4535,69 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SimpleDraweeView_actualImageResource com.androidinformationboardcaster:actualImageResource}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_actualImageScaleType com.androidinformationboardcaster:actualImageScaleType}</code></td><td></td></tr>
            <tr><td><code>{@link #SimpleDraweeView_actualImageUri com.androidinformationboardcaster:actualImageUri}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_backgroundImage com.androidinformationboardcaster:backgroundImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_fadeDuration com.androidinformationboardcaster:fadeDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_failureImage com.androidinformationboardcaster:failureImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_failureImageScaleType com.androidinformationboardcaster:failureImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_overlayImage com.androidinformationboardcaster:overlayImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_placeholderImage com.androidinformationboardcaster:placeholderImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_placeholderImageScaleType com.androidinformationboardcaster:placeholderImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_pressedStateOverlayImage com.androidinformationboardcaster:pressedStateOverlayImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_progressBarAutoRotateInterval com.androidinformationboardcaster:progressBarAutoRotateInterval}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_progressBarImage com.androidinformationboardcaster:progressBarImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_progressBarImageScaleType com.androidinformationboardcaster:progressBarImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_retryImage com.androidinformationboardcaster:retryImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_retryImageScaleType com.androidinformationboardcaster:retryImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundAsCircle com.androidinformationboardcaster:roundAsCircle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundBottomLeft com.androidinformationboardcaster:roundBottomLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundBottomRight com.androidinformationboardcaster:roundBottomRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundTopLeft com.androidinformationboardcaster:roundTopLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundTopRight com.androidinformationboardcaster:roundTopRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundWithOverlayColor com.androidinformationboardcaster:roundWithOverlayColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundedCornerRadius com.androidinformationboardcaster:roundedCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundingBorderColor com.androidinformationboardcaster:roundingBorderColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundingBorderPadding com.androidinformationboardcaster:roundingBorderPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_roundingBorderWidth com.androidinformationboardcaster:roundingBorderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SimpleDraweeView_viewAspectRatio com.androidinformationboardcaster:viewAspectRatio}</code></td><td></td></tr>
            </table>
            @see #SimpleDraweeView_actualImageResource
+           @see #SimpleDraweeView_actualImageScaleType
            @see #SimpleDraweeView_actualImageUri
+           @see #SimpleDraweeView_backgroundImage
+           @see #SimpleDraweeView_fadeDuration
+           @see #SimpleDraweeView_failureImage
+           @see #SimpleDraweeView_failureImageScaleType
+           @see #SimpleDraweeView_overlayImage
+           @see #SimpleDraweeView_placeholderImage
+           @see #SimpleDraweeView_placeholderImageScaleType
+           @see #SimpleDraweeView_pressedStateOverlayImage
+           @see #SimpleDraweeView_progressBarAutoRotateInterval
+           @see #SimpleDraweeView_progressBarImage
+           @see #SimpleDraweeView_progressBarImageScaleType
+           @see #SimpleDraweeView_retryImage
+           @see #SimpleDraweeView_retryImageScaleType
+           @see #SimpleDraweeView_roundAsCircle
+           @see #SimpleDraweeView_roundBottomLeft
+           @see #SimpleDraweeView_roundBottomRight
+           @see #SimpleDraweeView_roundTopLeft
+           @see #SimpleDraweeView_roundTopRight
+           @see #SimpleDraweeView_roundWithOverlayColor
+           @see #SimpleDraweeView_roundedCornerRadius
+           @see #SimpleDraweeView_roundingBorderColor
+           @see #SimpleDraweeView_roundingBorderPadding
+           @see #SimpleDraweeView_roundingBorderWidth
+           @see #SimpleDraweeView_viewAspectRatio
          */
         public static final int[] SimpleDraweeView = {
-            0x7f01005f, 0x7f010060
+            0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032,
+            0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036,
+            0x7f010037, 0x7f010038, 0x7f010039, 0x7f01003a,
+            0x7f01003b, 0x7f01003c, 0x7f01003d, 0x7f01003e,
+            0x7f01003f, 0x7f010040, 0x7f010041, 0x7f010042,
+            0x7f010043, 0x7f010044, 0x7f010045, 0x7f010046,
+            0x7f010047, 0x7f01005f, 0x7f010060
         };
         /**
           <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#actualImageResource}
@@ -4541,7 +4608,32 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.androidinformationboardcaster:actualImageResource
         */
-        public static final int SimpleDraweeView_actualImageResource = 1;
+        public static final int SimpleDraweeView_actualImageResource = 26;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#actualImageScaleType}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>-1</td><td></td></tr>
+<tr><td><code>fitXY</code></td><td>0</td><td></td></tr>
+<tr><td><code>fitStart</code></td><td>1</td><td></td></tr>
+<tr><td><code>fitCenter</code></td><td>2</td><td></td></tr>
+<tr><td><code>fitEnd</code></td><td>3</td><td></td></tr>
+<tr><td><code>center</code></td><td>4</td><td></td></tr>
+<tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
+<tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
+<tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
+</table>
+          @attr name com.androidinformationboardcaster:actualImageScaleType
+        */
+        public static final int SimpleDraweeView_actualImageScaleType = 11;
         /**
           <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#actualImageUri}
           attribute's value can be found in the {@link #SimpleDraweeView} array.
@@ -4555,7 +4647,367 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.androidinformationboardcaster:actualImageUri
         */
-        public static final int SimpleDraweeView_actualImageUri = 0;
+        public static final int SimpleDraweeView_actualImageUri = 25;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#backgroundImage}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.androidinformationboardcaster:backgroundImage
+        */
+        public static final int SimpleDraweeView_backgroundImage = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#fadeDuration}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:fadeDuration
+        */
+        public static final int SimpleDraweeView_fadeDuration = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#failureImage}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.androidinformationboardcaster:failureImage
+        */
+        public static final int SimpleDraweeView_failureImage = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#failureImageScaleType}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>-1</td><td></td></tr>
+<tr><td><code>fitXY</code></td><td>0</td><td></td></tr>
+<tr><td><code>fitStart</code></td><td>1</td><td></td></tr>
+<tr><td><code>fitCenter</code></td><td>2</td><td></td></tr>
+<tr><td><code>fitEnd</code></td><td>3</td><td></td></tr>
+<tr><td><code>center</code></td><td>4</td><td></td></tr>
+<tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
+<tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
+<tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
+</table>
+          @attr name com.androidinformationboardcaster:failureImageScaleType
+        */
+        public static final int SimpleDraweeView_failureImageScaleType = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#overlayImage}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.androidinformationboardcaster:overlayImage
+        */
+        public static final int SimpleDraweeView_overlayImage = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#placeholderImage}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.androidinformationboardcaster:placeholderImage
+        */
+        public static final int SimpleDraweeView_placeholderImage = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#placeholderImageScaleType}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>-1</td><td></td></tr>
+<tr><td><code>fitXY</code></td><td>0</td><td></td></tr>
+<tr><td><code>fitStart</code></td><td>1</td><td></td></tr>
+<tr><td><code>fitCenter</code></td><td>2</td><td></td></tr>
+<tr><td><code>fitEnd</code></td><td>3</td><td></td></tr>
+<tr><td><code>center</code></td><td>4</td><td></td></tr>
+<tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
+<tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
+<tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
+</table>
+          @attr name com.androidinformationboardcaster:placeholderImageScaleType
+        */
+        public static final int SimpleDraweeView_placeholderImageScaleType = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#pressedStateOverlayImage}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.androidinformationboardcaster:pressedStateOverlayImage
+        */
+        public static final int SimpleDraweeView_pressedStateOverlayImage = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#progressBarAutoRotateInterval}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:progressBarAutoRotateInterval
+        */
+        public static final int SimpleDraweeView_progressBarAutoRotateInterval = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#progressBarImage}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.androidinformationboardcaster:progressBarImage
+        */
+        public static final int SimpleDraweeView_progressBarImage = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#progressBarImageScaleType}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>-1</td><td></td></tr>
+<tr><td><code>fitXY</code></td><td>0</td><td></td></tr>
+<tr><td><code>fitStart</code></td><td>1</td><td></td></tr>
+<tr><td><code>fitCenter</code></td><td>2</td><td></td></tr>
+<tr><td><code>fitEnd</code></td><td>3</td><td></td></tr>
+<tr><td><code>center</code></td><td>4</td><td></td></tr>
+<tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
+<tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
+<tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
+</table>
+          @attr name com.androidinformationboardcaster:progressBarImageScaleType
+        */
+        public static final int SimpleDraweeView_progressBarImageScaleType = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#retryImage}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.androidinformationboardcaster:retryImage
+        */
+        public static final int SimpleDraweeView_retryImage = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#retryImageScaleType}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>-1</td><td></td></tr>
+<tr><td><code>fitXY</code></td><td>0</td><td></td></tr>
+<tr><td><code>fitStart</code></td><td>1</td><td></td></tr>
+<tr><td><code>fitCenter</code></td><td>2</td><td></td></tr>
+<tr><td><code>fitEnd</code></td><td>3</td><td></td></tr>
+<tr><td><code>center</code></td><td>4</td><td></td></tr>
+<tr><td><code>centerInside</code></td><td>5</td><td></td></tr>
+<tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
+<tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
+<tr><td><code>fitBottomStart</code></td><td>8</td><td></td></tr>
+</table>
+          @attr name com.androidinformationboardcaster:retryImageScaleType
+        */
+        public static final int SimpleDraweeView_retryImageScaleType = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundAsCircle}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundAsCircle
+        */
+        public static final int SimpleDraweeView_roundAsCircle = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundBottomLeft}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundBottomLeft
+        */
+        public static final int SimpleDraweeView_roundBottomLeft = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundBottomRight}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundBottomRight
+        */
+        public static final int SimpleDraweeView_roundBottomRight = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundTopLeft}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundTopLeft
+        */
+        public static final int SimpleDraweeView_roundTopLeft = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundTopRight}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundTopRight
+        */
+        public static final int SimpleDraweeView_roundTopRight = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundWithOverlayColor}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundWithOverlayColor
+        */
+        public static final int SimpleDraweeView_roundWithOverlayColor = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundedCornerRadius}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundedCornerRadius
+        */
+        public static final int SimpleDraweeView_roundedCornerRadius = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundingBorderColor}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundingBorderColor
+        */
+        public static final int SimpleDraweeView_roundingBorderColor = 23;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundingBorderPadding}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundingBorderPadding
+        */
+        public static final int SimpleDraweeView_roundingBorderPadding = 24;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#roundingBorderWidth}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:roundingBorderWidth
+        */
+        public static final int SimpleDraweeView_roundingBorderWidth = 22;
+        /**
+          <p>This symbol is the offset where the {@link com.androidinformationboardcaster.R.attr#viewAspectRatio}
+          attribute's value can be found in the {@link #SimpleDraweeView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.androidinformationboardcaster:viewAspectRatio
+        */
+        public static final int SimpleDraweeView_viewAspectRatio = 1;
         /** Attributes that can be used with a Spinner.
            <p>Includes the following attributes:</p>
            <table>

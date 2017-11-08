@@ -2,6 +2,7 @@ import { PHOTO_NUM, ProfileMap } from '../constants/common';
 import { AsyncStorage, CameraRoll } from 'react-native';
 import { PROFILE_ACTIONS } from '../constants/actionTypes';
 import { NavigationActions } from 'react-navigation';
+import { encodeImage } from '../lib/imageCodec';
 
 export const fetchProfile = () => {
 	return (dispatch, getState) => {
@@ -31,20 +32,16 @@ export const toggleModal = () => {
 	}
 }
 
-export const selectPhoto = (imageURL) => {
-	return (dispatch, getState) => {		
-		setItem(ProfileMap['profilePicture'], imageURL);
-		dispatch(updateProfile({
-			profilePicture: imageURL
-		}));
-	}
-}
-
 export const updateOneProfileAttr = (key, value) => {
 	return (dispatch, getState) => {
-		setItem(ProfileMap[key], value);
+		let realValue = value;
+		if (key === 'profilePicture') {
+			// read from content provider, compress and transform to base 64
+			encodeImage(value);
+		}
+		setItem(ProfileMap[key], realValue);
 		const profile = getState().profile.profile;
-		profile[key] = value;
+		profile[key] = realValue;
 		dispatch(updateProfile(profile));
 	}
 }
