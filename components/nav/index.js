@@ -11,7 +11,6 @@ export const RootTabNavigator = TabNavigator({
   },
 }, {
   tabBarPosition: 'bottom',
-  animationEnabled: true,
   tabBarOptions: {
     activeTintColor: 'black',
     inactiveTintColor: 'black',

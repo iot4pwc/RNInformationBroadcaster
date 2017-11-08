@@ -40,7 +40,7 @@ class Profile extends React.Component {
 
   componentWillUnmount = () => {
     BackHandler.removeEventListener("hardwareBackPress", this.onBackPress);
-  }   
+  }
 
   _handleSelectPhoto = (uri) => {
     return () => {
@@ -51,7 +51,6 @@ class Profile extends React.Component {
   }
 
   _handleProfileChange = (key, newContent) => {
-    console.log(newContent);
     const { updateOneProfileAttr } = this.props;
     updateOneProfileAttr(key, newContent);
   }
@@ -62,7 +61,7 @@ class Profile extends React.Component {
     const {
         isModalVisible,
         photos,
-        profilePicture,
+        profile,
         selectPhoto,
         toggleModal
     } = this.props;
@@ -73,7 +72,7 @@ class Profile extends React.Component {
           <Image
             resizeMode="cover"
             style={styles.avartar}
-            source={profilePicture === './profile_holder.png' ? require('./profile_holder.png') : {uri: profilePicture}}
+            source={profile.profilePicture === './profile_holder.png' ? require('./profile_holder.png') : {uri: profile.profilePicture}}
           />
         </TouchableHighlight>
         <View>
@@ -84,7 +83,7 @@ class Profile extends React.Component {
                   key={idx}
                   refFunc={(ref) => {this.formRefs[idx] = ref}}
                   header={DBProfileAttrMap[key]}
-                  content={this.props[key]}
+                  content={profile[key]}
                   onChangeText={(newContent) => this._handleProfileChange(key, newContent)}
                   onSubmitEditing={() => idx < ProfileAttributesList.length - 1 && this.formRefs[idx + 1].focus()}
                 />
@@ -130,22 +129,14 @@ class Profile extends React.Component {
 }
 
 Profile.propTypes = {
-  age: PropTypes.string,
-  company: PropTypes.string,
   fetchProfile: PropTypes.func.isRequired,
-  firstName: PropTypes.string,
   isModalVisible: PropTypes.bool,
   isProfileCompleted: PropTypes.bool,
-  lastName: PropTypes.string,
   photos: PropTypes.array,
-  position: PropTypes.string,
-  profilePicture: PropTypes.string,
-  resumeLink: PropTypes.string,
+  profile: PropTypes.object,
   selectPhoto: PropTypes.func.isRequired,
   toggleModal: PropTypes.func.isRequired,
   updateOneProfileAttr: PropTypes.func.isRequired,
-  user_email: PropTypes.string
-
 }
 
 const mapStateToProps = (state) => ({

@@ -2,17 +2,10 @@ import { PROFILE_ACTIONS } from '../constants/actionTypes';
 import { ProfileMap } from '../constants/common';
 
 const initialState = {
-    company: '',
-    age: '',
-    firstName: '',
     isModalVisible: false,
     isProfileCompleted: false,
-    lastName: '',
     photos: [],
-    position: '',
-    profilePicture: './profile_holder.png',
-    resumeLink: '',
-    user_email: ''	
+    profile: {}
 }
 
 const isProfileCompleted =(state) => {
@@ -36,7 +29,7 @@ export const profile = (state = initialState, action) => {
 
             let nextState = {
             	...state,
-            	...action.profile
+            	profile: { ...action.profile }
             };
 
             return {

@@ -43,7 +43,7 @@ export const selectPhoto = (imageURL) => {
 export const updateOneProfileAttr = (key, value) => {
 	return (dispatch, getState) => {
 		setItem(ProfileMap[key], value);
-		const profile = {};
+		const profile = getState().profile.profile;
 		profile[key] = value;
 		dispatch(updateProfile(profile));
 	}
