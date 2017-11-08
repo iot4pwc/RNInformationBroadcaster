@@ -7,11 +7,13 @@ import { Alert, AsyncStorage, CameraRoll } from 'react-native';
 export const checkin = (isHost) => {
 	return (dispatch, getState) => {
 		if (getState().profile.isProfileCompleted) {
-			scanBeacons((sortedUuidList) => fetchMeetingRoom(sortedUuidList).then(responseJson => 
+			scanBeacons((sortedUuidList) => fetchMeetingRoom(sortedUuidList).then(responseJson => {
 				dispatch({
 					type: WELCOME_ACTIONS.UPDATE_MEETING_ROOMS,
 					meetingRoomsList: responseJson.result
-				})));
+				});
+				dispatch(NavigationActions.navigate({ routeName: 'Rooms' }));
+			}));
 		} else {
 			Alert.alert(
 				'Incomplete Profile',

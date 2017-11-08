@@ -1,8 +1,9 @@
-import { TabNavigator } from 'react-navigation';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 import Welcome from '../../screens/Welcome';
 import Profile from '../../screens/Profile';
+import Rooms from '../../screens/Rooms';
 
-export const RootTabNavigator = TabNavigator({
+MainTabNavigator = TabNavigator({
   Home: {
     screen: Welcome,
   },
@@ -19,4 +20,18 @@ export const RootTabNavigator = TabNavigator({
         backgroundColor: 'white',
     }
   },
+});
+
+export const RootNavigator = StackNavigator({
+  Main: {
+      screen: MainTabNavigator,
+      navigationOptions: {
+        header: null
+      }
+  },
+  Rooms: {
+      screen: Rooms
+  }
+}, {
+    headerMode: 'screen',
 });

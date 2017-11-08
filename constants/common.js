@@ -36,3 +36,9 @@ export const DBProfileAttrMap = {
 	'user_email': 'EMAIL',
 	'resumeLink': 'RESUME LINK'
 }
+
+export const MeetingRoomAttrDBMap = {
+	roomId: 'room_id',
+	roomName: 'room_name',
+	uuid: 'uuid'
+}

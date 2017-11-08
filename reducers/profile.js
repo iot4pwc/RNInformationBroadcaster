@@ -9,7 +9,7 @@ const initialState = {
 }
 
 const isProfileCompleted =(state) => {
-    return Object.keys(ProfileMap).map(key => state[key]).filter(attr => attr).length == Object.keys(ProfileMap).length;
+    return Object.keys(ProfileMap).map(key => state.profile[key]).filter(attr => attr).length == Object.keys(ProfileMap).length;
 }
 
 export const profile = (state = initialState, action) => {

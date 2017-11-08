@@ -4,13 +4,8 @@ import { bindActionCreators } from 'redux';
 import React from 'react';
 import actions from '../../actions';
 import {
-  AsyncStorage,
-  Button,
-  Dimensions,
   Image,
   ScrollView,
-  StyleSheet,
-  Text,
   TouchableHighlight,
   View
 } from 'react-native';

@@ -2,7 +2,7 @@ import React from 'react';
 import { BackHandler } from "react-native";
 import { addNavigationHelpers, NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
-import { RootTabNavigator } from './components/nav';
+import { RootNavigator } from './components/nav';
 
 class App extends React.Component {
   componentDidMount = () => {
@@ -23,11 +23,14 @@ class App extends React.Component {
   };  
 
   render() {
+    const navigation = addNavigationHelpers({
+      dispatch: this.props.dispatch,
+      state: this.props.nav,
+    });
+
+    navigation.dispatch(NavigationActions.init());
     return (
-      <RootTabNavigator navigation={addNavigationHelpers({
-        dispatch: this.props.dispatch,
-        state: this.props.nav,
-      })} />
+      <RootNavigator navigation={navigation} />
     );
   }
 }
