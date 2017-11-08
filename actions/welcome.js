@@ -1,4 +1,5 @@
 import { WELCOME_ACTIONS } from '../constants/actionTypes';
+import { asyncGetWithJson } from '../lib/wrappedAjaxCalls';
 import { BleManager } from 'react-native-ble-plx';
 import { NavigationActions } from 'react-navigation';
 import { Alert, AsyncStorage, CameraRoll } from 'react-native';
@@ -6,11 +7,11 @@ import { Alert, AsyncStorage, CameraRoll } from 'react-native';
 export const checkin = (isHost) => {
 	return (dispatch, getState) => {
 		if (getState().profile.isProfileCompleted) {
-			const { fetchedUuidList } = getState().welcome;
-			const beaconList = scanBeacons(fetchedUuidList);
-			dispatch(updateBeacons(beaconList));
-			dispatch(updateHost(isHost));
-			// navigate to room selection
+			scanBeacons((sortedUuidList) => fetchMeetingRoom(sortedUuidList).then(responseJson => 
+				dispatch({
+					type: WELCOME_ACTIONS.UPDATE_MEETING_ROOMS,
+					meetingRoomsList: responseJson.result
+				})));
 		} else {
 			Alert.alert(
 				'Incomplete Profile',
@@ -27,36 +28,53 @@ export const checkin = (isHost) => {
 	}
 }
 
-const scanBeacons = () => {
+const fetchMeetingRoom = (sortedUuidList) => {
+	try {
+		return asyncGetWithJson('mapUUIDs', {
+			uuid: sortedUuidList.join(',')
+		});
+	} catch (error) {
+		console.log('error fetching meeting room info');
+	}
+}
+
+const scanBeacons = (callback) => {
 	const bleManager = new BleManager();
-	const beaconSet = new Set();
 	let stop = false;
+	let beaconRssiMap = {}
+
     bleManager.startDeviceScan(null, null, (error, device) => {
         if (error) {
             return [];
         }
-        
-        // TODO: figure out when to stop
-        stop = true
-		if (stop) {
-			bleManager.stopDeviceScan();	
-		} else {
-	        if (false) {
-	            beaconSet.add(device.id);
-	            // TODO: stop scanning when done
-	        }			
-		}  
 
-    });	
-    return Array.from(beaconSet);
+        // stop policy is set to when a beacon is discovered twice
+        stop = Object.values(beaconRssiMap).map(rssiArr => rssiArr.length).some((ele, idx, arr) => ele > 1);
+		if (stop) {
+			bleManager.stopDeviceScan();
+
+			const average = arr => arr.reduce(( p, c ) => p + c, 0 ) / arr.length;
+		    const ret = Object.entries(beaconRssiMap).map(([uuid, rssiArr]) => [uuid, average(rssiArr)]).sort((a, b) => b[1] - a[1]);
+		    const sortedUuidList = ret.map(r => r[0]);
+		    callback(sortedUuidList);
+		} else {
+	        if (device.name && device.name.includes('udooneo')) {
+	            if (device.id in beaconRssiMap) {
+	            	beaconRssiMap[device.id].push(device.rssi);
+	            } else {
+	            	beaconRssiMap[device.id] = [device.rssi];
+	            }
+	        }			
+		}
+    });
 }
 
 
 
-const updateBeacons = (scannedUuidList) => {
+const updateMeetingRooms = (meetingRoomsList) => {
 	return {
-		type: WELCOME_ACTIONS.UPDATE_BEACONS,
-		scannedUuidList
+		type: WELCOME_ACTIONS.UPDATE_MEETING_ROOMS,
+		meetingRoomsList
 	}
 }
 

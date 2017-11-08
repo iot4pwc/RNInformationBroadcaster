@@ -2,17 +2,19 @@ export const PHOTO_NUM = 100;
 export const CHECKIN_COLOR = '#b94a48';
 export const HOST_CHECKIN_COLOR = '#3a87ad';
 
-const ProflePrefix = '@Profile:';
+export const PROFILE_PREFIX = '@Profile:';
+export const BACKEND_PUBLIC_DNS = 'http://ec2-13-59-238-24.us-east-2.compute.amazonaws.com';
+export const BACKEND_PORT = 8080
 
 export const ProfileMap = {
-	user_email: ProflePrefix + "user_email",
-	firstName: ProflePrefix + "firstName",
-	lastName: ProflePrefix + "lastName",
-	age: ProflePrefix + "age",
-	resumeLink: ProflePrefix + "resumeLink",
-	profilePicture: ProflePrefix + "profilePicture",
-	position: ProflePrefix + "position",
-	company: ProflePrefix + "company"
+	user_email: PROFILE_PREFIX + "user_email",
+	firstName: PROFILE_PREFIX + "firstName",
+	lastName: PROFILE_PREFIX + "lastName",
+	age: PROFILE_PREFIX + "age",
+	resumeLink: PROFILE_PREFIX + "resumeLink",
+	profilePicture: PROFILE_PREFIX + "profilePicture",
+	position: PROFILE_PREFIX + "position",
+	company: PROFILE_PREFIX + "company"
 };
 
 export const ProfileAttributesList = [
@@ -34,4 +36,3 @@ export const DBProfileAttrMap = {
 	'user_email': 'EMAIL',
 	'resumeLink': 'RESUME LINK'
 }
-

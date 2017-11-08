@@ -6,7 +6,7 @@ import { NavigationActions } from 'react-navigation';
 export const fetchProfile = () => {
 	return (dispatch, getState) => {
 		let profileP = loadItems();
-		profileP.then((profile) => {
+		profileP.then(profile => {
 			dispatch(updateProfile(profile));		
 		})
 
@@ -33,7 +33,7 @@ export const toggleModal = () => {
 
 export const selectPhoto = (imageURL) => {
 	return (dispatch, getState) => {		
-		setItem('profilePicture', imageURL);
+		setItem(ProfileMap['profilePicture'], imageURL);
 		dispatch(updateProfile({
 			profilePicture: imageURL
 		}));

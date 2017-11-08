@@ -2,22 +2,15 @@ import { WELCOME_ACTIONS } from '../constants/actionTypes';
 
 const initialState = {
 	isHost: false,
-	fetchedUuidList: [],
-	scannedUuidList: []
+	meetingRoomsList: []
 };
 
 export const welcome = (state = initialState, action) => {
 	switch (action.type) {
-		case WELCOME_ACTIONS.UPDATE_UUIDS: {
+		case WELCOME_ACTIONS.UPDATE_MEETING_ROOMS: {
 			return {
 				...state,
-				fetchedUuidList: action.fetchedUuidList
-			}
-		}
-		case WELCOME_ACTIONS.UPDATE_BEACONS: {
-			return {
-				...state,
-				scannedUuidList: action.scannedUuidList
+				meetingRoomsList: action.meetingRoomsList
 			}
 		}
 		case WELCOME_ACTIONS.UPDATE_HOST: {

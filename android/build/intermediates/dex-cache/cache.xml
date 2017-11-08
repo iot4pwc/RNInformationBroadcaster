@@ -57,6 +57,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/org.altbeacon/android-beacon-library/2.9.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/org.altbeacon-android-beacon-library-2.9.2_0cf52f74513de841af9f7be0aa2af7cc8bf16b86.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.0/jars/libs/infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -171,6 +180,15 @@
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
         <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_512582364c5d4a391af4ea3ba08db0167ac48999.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/AndroidInformationBoardcaster/react-native-beacons-manager/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e86e63ca20071e478a929b9c15c80024e7e27301">
+        <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/AndroidInformationBoardcaster-react-native-beacons-manager-unspecified_84f4b772cacc717bd0ade63782c11ada5ce64434.jar" />
     </item>
     <item
         is-multidex="false"

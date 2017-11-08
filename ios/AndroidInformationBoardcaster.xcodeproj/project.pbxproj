@@ -50,6 +50,7 @@
 		9292514B9787436986B673CF /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19DA90E32347470B85F52AF5 /* Octicons.ttf */; };
 		40FA57140A7A4EA9B63B06EE /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8DC9F41608448AD9239ACD6 /* SimpleLineIcons.ttf */; };
 		ED722179F1AA40D4B6F14C36 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E61E24B0EB54BA19C7FA75E /* Zocial.ttf */; };
+		87D86D7F869C49B5941C1317 /* libRNiBeacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5571E49D26E4815B32E3404 /* libRNiBeacon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +295,8 @@
 		19DA90E32347470B85F52AF5 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E8DC9F41608448AD9239ACD6 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		1E61E24B0EB54BA19C7FA75E /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4398840A81D144CD918AD31A /* RNiBeacon.xcodeproj */ = {isa = PBXFileReference; name = "RNiBeacon.xcodeproj"; path = "../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		C5571E49D26E4815B32E3404 /* libRNiBeacon.a */ = {isa = PBXFileReference; name = "libRNiBeacon.a"; path = "libRNiBeacon.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +328,7 @@
 				77285766EC80453A8FF7CE86 /* libBleClient.a in Frameworks */,
 				695E42B8F0444AA4A3508681 /* libRNFetchBlob.a in Frameworks */,
 				B2B5CE20CF4B4880B15EF76E /* libRNVectorIcons.a in Frameworks */,
+				87D86D7F869C49B5941C1317 /* libRNiBeacon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +500,7 @@
 				45E851C54F5340C392AAB494 /* BleClient.xcodeproj */,
 				7BCB79DFAD7F47008117EAB2 /* RNFetchBlob.xcodeproj */,
 				AB43D42E05AE49B29530C5BF /* RNVectorIcons.xcodeproj */,
+				4398840A81D144CD918AD31A /* RNiBeacon.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1077,12 +1082,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
 				);
 			};
 			name = Debug;
@@ -1106,12 +1113,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
 				);
 			};
 			name = Release;
@@ -1136,6 +1145,7 @@
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
 				);
 			};
 			name = Debug;
@@ -1159,6 +1169,7 @@
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
 				);
 			};
 			name = Release;
@@ -1191,12 +1202,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
 				);
 			};
 			name = Debug;
@@ -1229,12 +1242,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
 				);
 			};
 			name = Release;
@@ -1262,6 +1277,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1286,6 +1302,7 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

@@ -18,6 +18,7 @@ import {
 } from 'react-native';
 import ProfileForm from '../../components/form';
 import { ProfileAttributesList, DBProfileAttrMap } from '../../constants/common';
+import PropTypes from 'prop-types';
 
 class Profile extends React.Component {
   static navigationOptions = {
@@ -126,6 +127,25 @@ class Profile extends React.Component {
       </ScrollView>
     );
   }
+}
+
+Profile.propTypes = {
+  age: PropTypes.string,
+  company: PropTypes.string,
+  fetchProfile: PropTypes.func.isRequired,
+  firstName: PropTypes.string,
+  isModalVisible: PropTypes.bool,
+  isProfileCompleted: PropTypes.bool,
+  lastName: PropTypes.string,
+  photos: PropTypes.array,
+  position: PropTypes.string,
+  profilePicture: PropTypes.string,
+  resumeLink: PropTypes.string,
+  selectPhoto: PropTypes.func.isRequired,
+  toggleModal: PropTypes.func.isRequired,
+  updateOneProfileAttr: PropTypes.func.isRequired,
+  user_email: PropTypes.string
+
 }
 
 const mapStateToProps = (state) => ({

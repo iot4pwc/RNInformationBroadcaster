@@ -30,8 +30,6 @@ export const profile = (state = initialState, action) => {
             }
         }
         case PROFILE_ACTIONS.UPDATE_PROFILE: {
-            console.log(action.profile);
-
             if (action.profile.profilePicture === null) {
                 action.profile.profilePicture = './profile_holder.png';
             }

@@ -8,12 +8,14 @@ import {
   Button,
   Dimensions,
   Image,
+  ScrollView,
   StyleSheet,
   Text,
   TouchableHighlight,
   View
 } from 'react-native';
 import styles from './styles';
+import PropTypes from 'prop-types';
 
 class Welcome extends React.Component {
   static navigationOptions = {
@@ -34,7 +36,7 @@ class Welcome extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
           <TouchableHighlight onPress={this._handleOnPress(false)}>
             <Image
               resizeMode="stretch"
@@ -49,9 +51,13 @@ class Welcome extends React.Component {
               source={require('./hostCheckin.jpeg')}
             />        
           </TouchableHighlight>         
-      </View>
+      </ScrollView>
     );
   }
+}
+
+Welcome.propTypes = {
+  checkin: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({
