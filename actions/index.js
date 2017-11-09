@@ -1,9 +1,15 @@
-import * as WelcomeActions from './welcome';
+import * as FilesActions from './files';
+import * as PeopleActions from './people';
 import * as ProfileActions from './profile';
 import * as RoomActions from './room';
+import * as RoomInfoActions from './roomInfo';
+import * as WelcomeActions from './welcome';
 
 export default Object.assign({},
-	WelcomeActions,
+	FilesActions,
+	PeopleActions,
 	ProfileActions,
-	RoomActions
+	RoomActions,
+	RoomInfoActions,
+	WelcomeActions
 );
