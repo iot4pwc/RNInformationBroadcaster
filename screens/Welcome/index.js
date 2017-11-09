@@ -26,8 +26,8 @@ class Welcome extends React.Component {
   }
 
   _handleOnPress = (isHost) => {
-    const { checkin } = this.props;
-    return () => checkin(isHost);
+    const { preCheckin } = this.props;
+    return () => preCheckin(isHost);
   }
 
   render() {
@@ -58,7 +58,7 @@ class Welcome extends React.Component {
 
 Welcome.propTypes = {
   isLoading: PropTypes.bool.isRequired,
-  checkin: PropTypes.func.isRequired
+  preCheckin: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({

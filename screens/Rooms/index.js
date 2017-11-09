@@ -26,11 +26,14 @@ class Rooms extends React.Component {
 
   _handleOnPress = (roomId) => {
     // TODO: figure out what to do
+    return () => {
+      const { checkin } = this.props;
+      checkin(roomId);
+    }
   }
 
   render() {
     const { meetingRoomsList } = this.props;
-
 
     return (
       <ScrollView style={styles.container}>
@@ -42,6 +45,7 @@ class Rooms extends React.Component {
                 title={room[MeetingRoomAttrDBMap.roomName]}
                 leftIcon={{name: 'av-timer'}}
                 titleStyle={styles.title}
+                onPress={this._handleOnPress(room[MeetingRoomAttrDBMap.roomId])}
               />
             ))
           }    
@@ -51,8 +55,16 @@ class Rooms extends React.Component {
   }
 }
 
+Rooms.propTypes = {
+  meetingRoomsList: PropTypes.array.isRequired,
+  checkin: PropTypes.func.isRequired,
+  roomId: PropTypes.string.isRequired,
+  tokenInfo: PropTypes.object.isRequired,
+}
+
 const mapStateToProps = (state) => ({
-  ...state.welcome
+  meetingRoomsList: state.welcome.meetingRoomsList,
+  ...state.room
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators(actions, dispatch);

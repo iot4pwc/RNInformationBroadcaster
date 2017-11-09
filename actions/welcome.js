@@ -4,7 +4,7 @@ import { BleManager } from 'react-native-ble-plx';
 import { NavigationActions } from 'react-navigation';
 import { Alert, AsyncStorage, CameraRoll } from 'react-native';
 
-export const checkin = (isHost) => {
+export const preCheckin = (isHost) => {
 	return (dispatch, getState) => {
 		if (getState().profile.isProfileCompleted) {
 			dispatch({ type: WELCOME_ACTIONS.TOGGLE_LOADING });
@@ -28,6 +28,7 @@ export const checkin = (isHost) => {
 				}]
 			);
 		}
+		dispatch(updateHost(isHost));
 	}
 }
 

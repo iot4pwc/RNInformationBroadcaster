@@ -15,12 +15,6 @@ let BACKEND_HEADER = {}
 BACKEND_HEADER[BACKEND_HEADER_KEY] = BACKEND_HEADER_VALUE
 export default BACKEND_HEADER;
 
-const { WIDTH, HEIGHT } = Dimensions.get('window');
-export const Layout = {
-	width: WIDTH,
-	height: HEIGHT
-}
-
 export const ProfileMap = {
 	user_email: PROFILE_PREFIX + "user_email",
 	firstName: PROFILE_PREFIX + "firstName",

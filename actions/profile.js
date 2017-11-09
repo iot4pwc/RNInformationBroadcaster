@@ -34,15 +34,20 @@ export const toggleModal = () => {
 
 export const updateOneProfileAttr = (key, value) => {
 	return (dispatch, getState) => {
-		let realValue = value;
+		// had to write ugly code because action itself shouldn't be async
 		if (key === 'profilePicture') {
-			// read from content provider, compress and transform to base 64
-			encodeImage(value);
+			encodeImage(value).then(uri => {
+				setItem(ProfileMap[key], uri);
+				const profile = getState().profile.profile;
+				profile[key] = uri;
+				dispatch(updateProfile(profile));				
+			});
+		} else {
+			setItem(ProfileMap[key], value);
+			const profile = getState().profile.profile;
+			profile[key] = value;
+			dispatch(updateProfile(profile));			
 		}
-		setItem(ProfileMap[key], realValue);
-		const profile = getState().profile.profile;
-		profile[key] = realValue;
-		dispatch(updateProfile(profile));
 	}
 }
 
