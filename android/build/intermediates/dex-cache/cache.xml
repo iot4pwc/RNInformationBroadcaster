@@ -147,21 +147,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_f52f601c7466f71d03ed6a09821f8eae4e305051.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.5.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="9602d1e79216cd0e61d22fad40caee64365f29ac">
         <dex dex="/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.5.0_0b938c8c9834a27e0590aac8ad4e918f850f6f8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Reddiel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/Reddiel/pwc/AndroidInformationBoardcaster/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_f52f601c7466f71d03ed6a09821f8eae4e305051.jar" />
     </item>
     <item
         is-multidex="false"

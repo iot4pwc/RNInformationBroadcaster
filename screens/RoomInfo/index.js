@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import React from 'react';
 import actions from '../../actions';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
 
@@ -12,7 +12,7 @@ class RoomInfo extends React.Component {
     tabBarLabel: 'ROOM',
     tabBarIcon: ({ tintColor, focused }) => (
       <Ionicons
-        name={focused ? 'ios-person' : 'ios-person-outline'}
+        name={focused ? 'ios-information-circle' : 'ios-information-circle-outline'}
         size={26}
         style={{ color: tintColor }}
       />

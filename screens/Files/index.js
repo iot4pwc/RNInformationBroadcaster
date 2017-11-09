@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import React from 'react';
 import actions from '../../actions';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
 

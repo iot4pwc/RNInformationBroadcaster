@@ -15,9 +15,9 @@ class App extends React.Component {
 
   onBackPress = () => {
     const { dispatch, nav } = this.props;
-    if (nav.index === 0) {
+    if (nav.index === 0 || nav.index === 2 && nav.routes[2].index === 0) {
       return true;
-    }
+    }    
     dispatch(NavigationActions.back());
     return true;
   };  
@@ -28,7 +28,6 @@ class App extends React.Component {
       state: this.props.nav,
     });
 
-    navigation.dispatch(NavigationActions.init());
     return (
       <RootNavigator navigation={navigation} />
     );

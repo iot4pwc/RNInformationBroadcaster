@@ -33,8 +33,8 @@ export const checkin = (roomId) => {
 			dispatch({
 				type: ROOM_ACTIONS.UPDATE_TOKEN,
 				tokenInfo: responseJSON
-			})
-			// TODO: navigate to new page
+			});
+			dispatch(NavigationActions.navigate({ routeName: 'Meeting' }));
 		})
 	}
 }

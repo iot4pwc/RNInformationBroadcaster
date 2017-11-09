@@ -4,7 +4,12 @@ import React from 'react';
 import styles from './styles';
 import { BackHandler } from "react-native";
 import { bindActionCreators } from 'redux';
-import { CHECKIN_COLOR, ProfileMap } from '../../constants/common';
+import {
+  CHECKIN_COLOR,
+  DBProfileAttrMap,
+  ProfileAttributesList,
+  ProfileMap
+} from '../../constants/common';
 import { connect } from 'react-redux';
 import {
   Button,
@@ -17,7 +22,6 @@ import {
   View
 } from 'react-native';
 import ProfileForm from '../../components/form';
-import { ProfileAttributesList, DBProfileAttrMap } from '../../constants/common';
 import PropTypes from 'prop-types';
 
 class Profile extends React.Component {
