@@ -46,6 +46,26 @@ export const DBProfileAttrMap = {
 	'resumeLink': 'RESUME LINK'
 }
 
+export const ProfilePlaceholderMap = {
+	'firstName': 'e.g. Andrew',
+	'lastName': 'e.g. Carnegie',
+	'age': 'e.g. 55',
+	'company': 'e.g. Carnegie Mellon University',
+	'position': 'e.g. President',
+	'user_email': 'e.g. andrew@cmu.edu',
+	'resumeLink': 'e.g. www.andrew.com'	
+}
+
+export const KeyboardTypeMap = {
+	'firstName': 'default',
+	'lastName': 'default',
+	'age': 'numeric',
+	'company': 'default',
+	'position': 'default',
+	'user_email': 'email-address',
+	'resumeLink': 'url'	
+}
+
 export const MeetingRoomAttrDBMap = {
 	roomId: 'room_id',
 	roomName: 'room_name',

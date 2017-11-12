@@ -8,7 +8,9 @@ import {
   CHECKIN_COLOR,
   DBProfileAttrMap,
   ProfileAttributesList,
-  ProfileMap
+  ProfileMap,
+  ProfilePlaceholderMap,
+  KeyboardTypeMap
 } from '../../constants/common';
 import { connect } from 'react-redux';
 import {
@@ -75,7 +77,7 @@ class Profile extends React.Component {
           <Image
             resizeMode="cover"
             style={styles.avartar}
-            source={profile.profilePicture === './profile_holder.png' ? require('./profile_holder.png') : {uri: profile.profilePicture}}
+            source={{uri: profile.profilePicture}}
           />
         </TouchableHighlight>
         <View>
@@ -87,6 +89,8 @@ class Profile extends React.Component {
                   refFunc={(ref) => {this.formRefs[idx] = ref}}
                   header={DBProfileAttrMap[key]}
                   content={profile[key]}
+                  keyboardType={KeyboardTypeMap[key]}
+                  placeholder={ProfilePlaceholderMap[key]}
                   onChangeText={(newContent) => this._handleProfileChange(key, newContent)}
                   onSubmitEditing={() => idx < ProfileAttributesList.length - 1 && this.formRefs[idx + 1].focus()}
                 />

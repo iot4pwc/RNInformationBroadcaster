@@ -18,6 +18,24 @@ export default StyleSheet.create({
   },
   divider: {
   	backgroundColor: HOST_CHECKIN_COLOR,
-  	height: 7
-  }
+  	height: 2
+  },
+  title: {
+    marginTop: 5,
+    fontSize: 14,
+    color: 'grey',
+    fontWeight: "bold"
+  },
+  nonClickableAttr: {
+    marginTop: 10,
+    marginBottom: 5,
+    fontSize: 18,
+    color: 'black',
+  },
+  clickableAttr: {
+    marginTop: 10,
+    marginBottom: 5,
+    fontSize: 18,
+    color: 'cornflowerblue',
+  } 
 });

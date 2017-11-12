@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import React from 'react';
 import actions from '../../actions';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView, View, Text, TouchableOpacity, Linking } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
 import Accordion from 'react-native-collapsible/Accordion';
 import { Card, Divider, ListItem } from 'react-native-elements';
+import { DBProfileAttrMap, ProfileAttributesList } from '../../constants/common';
 
 class People extends React.Component {
   static navigationOptions = {
@@ -45,6 +46,22 @@ class People extends React.Component {
     );
   }
 
+  _handleAttrPress = (attr, attrVal) => {
+    return () => {
+      let url = attrVal;
+      if (!url.includes('http')) {
+        url = `http://${url}`
+      }
+      Linking.canOpenURL(url).then(supported => {
+        if (!supported) {
+          console.log('Can\'t handle url: ' + url);
+        } else {
+          return Linking.openURL(url);
+        }
+      }).catch(err => console.error('An error occurred', err));      
+    }
+  }
+
   _renderContent = (participant) => {
     return (
       <View style={styles.container}>
@@ -56,7 +73,27 @@ class People extends React.Component {
             style: styles.imageStyle
           }}
           image={{uri: participant.profilePicture}}
-        />
+        >
+          {
+            ProfileAttributesList.slice(2).map(attr => {
+              if (attr === 'resumeLink' || attr === 'user_email') {
+                return (
+                  <TouchableOpacity onPress={this._handleAttrPress(attr, participant[attr])}>
+                    <Text style={styles.title}>{DBProfileAttrMap[attr]}</Text>
+                    <Text style={styles.clickableAttr}>{participant[attr]}</Text>
+                  </TouchableOpacity>
+                );
+              } else {
+                return (
+                  <View>
+                    <Text style={styles.title}>{DBProfileAttrMap[attr]}</Text>
+                    <Text style={styles.nonClickableAttr}>{participant[attr]}</Text>
+                  </View>
+                );
+              }
+            })
+          }
+        </Card>
 
       </View>
     );
@@ -70,7 +107,6 @@ class People extends React.Component {
           renderHeader={this._renderHeader}
           renderContent={this._renderContent}
         />
-        <Divider style={styles.divider} />
       </ScrollView>
     );
   }

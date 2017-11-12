@@ -1,5 +1,6 @@
 import { PROFILE_ACTIONS } from '../constants/actionTypes';
 import { ProfileMap } from '../constants/common';
+import profileHolder from '../constants/profileHolder';
 
 const initialState = {
     isModalVisible: false,
@@ -24,7 +25,7 @@ export const profile = (state = initialState, action) => {
         }
         case PROFILE_ACTIONS.UPDATE_PROFILE: {
             if (action.profile.profilePicture === null) {
-                action.profile.profilePicture = './profile_holder.png';
+                action.profile.profilePicture = profileHolder;
             }
 
             let nextState = {
