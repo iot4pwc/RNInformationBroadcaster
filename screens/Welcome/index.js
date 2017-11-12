@@ -6,7 +6,9 @@ import actions from '../../actions';
 import {
   Image,
   ScrollView,
+  Text,
   TouchableHighlight,
+  TouchableOpacity,
   View
 } from 'react-native';
 import styles from './styles';
@@ -34,20 +36,18 @@ class Welcome extends React.Component {
     const { isLoading } = this.props;
     return (
       <ScrollView style={styles.container}>
-        <TouchableHighlight onPress={this._handleOnPress(false)}>
-          <Image
-            resizeMode="stretch"
-            style={styles.buttonView}
-            source={require('./checkin.jpeg')}
-          />        
-        </TouchableHighlight>
-        <TouchableHighlight onPress={this._handleOnPress(true)}>
-          <Image
-            resizeMode="stretch"
-            style={styles.buttonView}
-            source={require('./hostCheckin.jpeg')}
-          />        
-        </TouchableHighlight>
+        <TouchableOpacity
+          onPress={this._handleOnPress(false)}
+          style={styles.checkin}
+        >
+          <Text style={styles.checkinText}>CHECKIN</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={this._handleOnPress(false)}
+          style={styles.hostCheckin}
+        >
+          <Text style={styles.checkinText}>HOST CHECKIN</Text>
+        </TouchableOpacity>        
         <View>
           <Loading isLoading={isLoading}/>
         </View>         
