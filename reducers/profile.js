@@ -1,6 +1,7 @@
 import { PROFILE_ACTIONS } from '../constants/actionTypes';
 import { ProfileMap } from '../constants/common';
 import profileHolder from '../constants/profileHolder';
+import {REHYDRATE} from 'redux-persist/constants';
 
 const initialState = {
     isModalVisible: false,
@@ -15,6 +16,11 @@ const isProfileCompleted =(state) => {
 
 export const profile = (state = initialState, action) => {
     switch (action.type) {
+        case REHYDRATE: {
+            var incoming = action.payload.profile;
+            if (incoming) return {...state, ...incoming};
+            return state;
+        }           
         case PROFILE_ACTIONS.TOGGLE_MODAL: {
         	const { isModalVisible } = state;
 

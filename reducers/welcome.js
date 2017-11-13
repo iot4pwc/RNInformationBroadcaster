@@ -1,4 +1,5 @@
 import { WELCOME_ACTIONS } from '../constants/actionTypes';
+import {REHYDRATE} from 'redux-persist/constants';
 
 const initialState = {
 	isLoading: false,
@@ -8,6 +9,11 @@ const initialState = {
 
 export const welcome = (state = initialState, action) => {
 	switch (action.type) {
+		case REHYDRATE: {
+			var incoming = action.payload.welcome;
+			if (incoming) return {...state, ...incoming};
+	        return state;
+		}		
 		case WELCOME_ACTIONS.UPDATE_MEETING_ROOMS: {
 			return {
 				...state,
