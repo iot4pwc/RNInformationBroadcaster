@@ -15,6 +15,24 @@ let BACKEND_HEADER = {}
 BACKEND_HEADER[BACKEND_HEADER_KEY] = BACKEND_HEADER_VALUE
 export default BACKEND_HEADER;
 
+export const FilesAttributesList = [
+	'file_header',
+	'file_type',
+	'file_link'
+];
+
+export const DBFilesAttrMap = {
+	'file_header': 'FILE NAME',
+	'file_type': 'FILE TYPE',
+	'file_link': 'LINK',
+}
+
+export const FilesPlaceholderMap = {
+	'file_header': 'e.g. React native',
+	'file_type': 'e.g. url',
+	'file_link': 'e.g. drive.google.com/123'
+}
+
 export const ProfileMap = {
 	user_email: PROFILE_PREFIX + "user_email",
 	firstName: PROFILE_PREFIX + "firstName",

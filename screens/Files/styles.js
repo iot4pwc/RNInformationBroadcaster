@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
+import { CHECKIN_COLOR, HOST_CHECKIN_COLOR } from '../../constants/common';
 
 const {width, height} = Dimensions.get('window');
 
@@ -57,5 +58,18 @@ export default StyleSheet.create({
     marginBottom: 10,
     fontSize: 18,
     color: 'cornflowerblue',
-  }  
+  },
+  buttonRow: {
+    flex: 1,
+    flexDirection: 'row',
+    height: 0.08 * height
+  },
+  uploadHeader: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
+    marginTop: 10,
+    alignSelf: 'center',
+    textAlign: 'center'
+  },
 });

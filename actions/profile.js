@@ -1,7 +1,6 @@
 import { PHOTO_NUM, ProfileMap } from '../constants/common';
 import { AsyncStorage, CameraRoll } from 'react-native';
 import { PROFILE_ACTIONS } from '../constants/actionTypes';
-import { NavigationActions } from 'react-navigation';
 import { encodeImage } from '../lib/imageCodec';
 
 export const fetchProfile = () => {

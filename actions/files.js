@@ -1,5 +1,5 @@
 import { FILES_ACTIONS } from '../constants/actionTypes';
-import { asyncGetWithJson, asyncDeleteWithJson } from '../lib/wrappedAjaxCalls';
+import { asyncGetWithJson, asyncDeleteWithJson, asyncPost } from '../lib/wrappedAjaxCalls';
 import { Alert } from 'react-native';
 
 export const fetchFiles = (accessCode) => {
@@ -27,6 +27,28 @@ export const fetchFiles = (accessCode) => {
 	}
 }
 
+export const uploadFile = (header, type, link, token) => {
+	return (dispatch, getState) => {
+		const payload = {
+			accessCode: token,
+			file_header: header,
+			file_type: type,
+			file_link: link
+		}
+		const { roomId } = getState().room;
+		const endpoint = `${roomId}/postFile`;
+		asyncPost(endpoint, payload, () => {
+			Alert.alert(
+				'Error uploading file',
+				'Please check you access code',
+				[{
+					text: 'Ok'
+				}]
+			);				
+		}).then(response => {console.log(response)});		
+	}	
+}
+
 export const deleteFile = (fileKey) => {
 	return (dispatch, getState) => {
 		const payload = {
@@ -46,7 +68,6 @@ export const deleteFile = (fileKey) => {
 				}]
 			);				
 		}).then(response => {
-			// TODO: refresh file
 			const files = Object.assign({}, getState().files.files);
 			delete files[fileKey];
 			dispatch({
