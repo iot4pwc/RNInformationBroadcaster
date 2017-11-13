@@ -7,8 +7,9 @@ import { ScrollView, View, Text, TouchableOpacity, Linking } from 'react-native'
 import styles from './styles';
 import PropTypes from 'prop-types';
 import Accordion from 'react-native-collapsible/Accordion';
-import { Card, Divider, ListItem } from 'react-native-elements';
+import { Card, ListItem } from 'react-native-elements';
 import { DBProfileAttrMap, ProfileAttributesList } from '../../constants/common';
+import AnchorButton from '../../components/anchorButton';
 
 class People extends React.Component {
   static navigationOptions = {
@@ -35,15 +36,39 @@ class People extends React.Component {
   }
 
   _renderHeader = (participant) => {
-    return (
-      <View>
-        <ListItem
-          roundAvatar
-          avatar={{uri: participant.profilePicture}}
-          title={`${participant.firstName} ${participant.lastName}`}
-        />
-      </View>
-    );
+    if (participant.is_host) {
+      return (
+        <View>
+          <ListItem
+            roundAvatar 
+            avatar={{uri: participant.profilePicture}}
+            badge={
+              { value: 'Host',
+                textStyle: {
+                  color: 'white',
+                  fontSize: 14,
+                  fontWeight: 'bold'
+                },
+                containerStyle: {
+                  marginTop: 5
+                }
+              }
+            }
+            title={`${participant.firstName} ${participant.lastName}`}
+          />
+        </View>
+      );      
+    } else {
+      return (
+        <View>
+          <ListItem
+            roundAvatar
+            avatar={{uri: participant.profilePicture}}
+            title={`${participant.firstName} ${participant.lastName}`}
+          />
+        </View>
+      );
+    }
   }
 
   _handleAttrPress = (attr, attrVal) => {
@@ -60,6 +85,21 @@ class People extends React.Component {
         }
       }).catch(err => console.error('An error occurred', err));      
     }
+  }
+
+  _getHostFirstArray = (participants) => {
+    for (let idx = 0; idx < participants.length; idx++) {
+      if (participants[idx].isHost) {
+        arraymove(participants, idx, 0);
+        break;
+      }
+    }
+  }
+
+  arraymove = (arr, fromIdx, toIdx) => {
+    var element = arr[fromIdx];
+    arr.splice(fromIdx, 1);
+    arr.splice(toIdx, 0, element);
   }
 
   _renderContent = (participant) => {
@@ -99,15 +139,25 @@ class People extends React.Component {
     );
   }
 
+  _handleCheckout = () => {
+    console.log(123);
+  }
+
   render() {
     return (
-      <ScrollView style={{flex: 1}}>
-        <Accordion 
-          sections={this.props.participants}
-          renderHeader={this._renderHeader}
-          renderContent={this._renderContent}
+      <View style={{flex: 1}}>
+        <ScrollView style={styles.scrollPanel}>
+          <Accordion 
+            sections={this.props.participants}
+            renderHeader={this._renderHeader}
+            renderContent={this._renderContent}
+          />
+        </ScrollView>
+        <AnchorButton
+          onPress={this._handleCheckout}
+          text={'CHECK OUT'}
         />
-      </ScrollView>
+      </View>
     );
   }
 }

@@ -7,7 +7,6 @@ import {
   Image,
   ScrollView,
   Text,
-  TouchableHighlight,
   TouchableOpacity,
   View
 } from 'react-native';
@@ -40,13 +39,13 @@ class Welcome extends React.Component {
           onPress={this._handleOnPress(false)}
           style={styles.checkin}
         >
-          <Text style={styles.checkinText}>CHECKIN</Text>
+          <Text style={styles.checkinText}>CHECK IN</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={this._handleOnPress(false)}
           style={styles.hostCheckin}
         >
-          <Text style={styles.checkinText}>HOST CHECKIN</Text>
+          <Text style={styles.checkinText}>CHECK IN AS HOST</Text>
         </TouchableOpacity>        
         <View>
           <Loading isLoading={isLoading}/>

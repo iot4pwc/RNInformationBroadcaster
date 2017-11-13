@@ -18,8 +18,6 @@ export const fetchParticipants = () => {
 		}).then(responseJson => {
 			const currentParticipants = getState().people.participants;
 			const participants = Object.values(responseJson).sort((a, b) => a.firstName - b.firstName);
-			console.log(currentParticipants);
-			console.log(participants);
 
 			if (Object.keys(currentParticipants).length === 0 ||
 				currentParticipants.some((ele, idx, arr) => !isEqual(ele, participants[idx])))

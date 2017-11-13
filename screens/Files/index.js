@@ -6,6 +6,7 @@ import actions from '../../actions';
 import { ScrollView, View, Text } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
+import AnchorButton from '../../components/anchorButton';
 
 class Files extends React.Component {
   static navigationOptions = {
@@ -19,11 +20,21 @@ class Files extends React.Component {
     ),
   }
 
+  _handleCheckout = () => {
+    console.log(123);
+  }  
+
   render() {
     return (
-      <ScrollView style={styles.container}>
-        <Text>Files</Text>
-      </ScrollView>
+      <View style={styles.container}>
+        <ScrollView style={styles.scrollPanel}>
+          <Text>Files</Text>
+        </ScrollView>
+        <AnchorButton
+          onPress={this._handleCheckout}
+          text={'CHECK OUT'}
+        />
+      </View>
     );
   }
 }
@@ -32,6 +43,7 @@ Files.propTypes = {
 }
 
 const mapStateToProps = (state) => ({
+  isThisTabOn: state.nav.routes[2].index === 1,
   ...state.files
 });
 

@@ -1,5 +1,7 @@
 import { Dimensions, StyleSheet } from 'react-native';
-import { HOST_CHECKIN_COLOR } from '../../constants/common';
+import { CHECKIN_COLOR } from '../../constants/common';
+
+const {width, height} = Dimensions.get('window');
 
 export default StyleSheet.create({
   container: {
@@ -11,14 +13,10 @@ export default StyleSheet.create({
   },
   card: {
   	marginTop: 0,
-  	width: Dimensions.get('window').width
+  	width: width
   },
   imageStyle: {
   	height: 400
-  },
-  divider: {
-  	backgroundColor: HOST_CHECKIN_COLOR,
-  	height: 2
   },
   title: {
     marginTop: 5,
@@ -37,5 +35,8 @@ export default StyleSheet.create({
     marginBottom: 5,
     fontSize: 18,
     color: 'cornflowerblue',
-  } 
+  },
+  scrollPanel: {
+    flex: 0.9
+  }
 });
