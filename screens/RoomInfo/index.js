@@ -3,10 +3,12 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import React from 'react';
 import actions from '../../actions';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView, View, Text, WebView } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
 import AnchorButton from '../../components/anchorButton';
+import Accordion from 'react-native-collapsible/Accordion';
+import { ListItem } from 'react-native-elements';
 
 class RoomInfo extends React.Component {
   static navigationOptions = {
@@ -25,11 +27,16 @@ class RoomInfo extends React.Component {
     checkout();
   } 
 
+  componentWillMount = () => {
+    const { fetchRoomInfo } = this.props;
+    fetchRoomInfo();
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scrollPanel}>
-          <Text>Rooms</Text>
+
         </ScrollView>
         <AnchorButton
           onPress={this._handleCheckout}
@@ -41,6 +48,7 @@ class RoomInfo extends React.Component {
 }
 
 RoomInfo.propTypes = {
+  checkout: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({

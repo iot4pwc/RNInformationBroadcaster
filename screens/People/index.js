@@ -23,7 +23,7 @@ class People extends React.Component {
     ),
   }
 
-  componentDidMount = () => {
+  componentWillMount = () => {
     const { fetchParticipants } = this.props;
     fetchParticipants();
   }
