@@ -1,6 +1,7 @@
 import { asyncPostWithJson } from '../lib/wrappedAjaxCalls';
 import { NavigationActions } from 'react-navigation';
 import { ROOM_ACTIONS } from '../constants/actionTypes';
+import { Alert } from 'react-native';
 
 export const checkin = (roomId) => {
 	return (dispatch, getState) => {
@@ -11,7 +12,7 @@ export const checkin = (roomId) => {
 
 		const { welcome, profile } = getState();
 
-		payload = {
+		const payload = {
 			...profile.profile,
 			host_flag: welcome.isHost
 		}
@@ -35,6 +36,6 @@ export const checkin = (roomId) => {
 				tokenInfo: responseJSON
 			});
 			dispatch(NavigationActions.navigate({ routeName: 'Meeting' }));
-		})
+		});
 	}
 }

@@ -21,8 +21,9 @@ class Files extends React.Component {
   }
 
   _handleCheckout = () => {
-    console.log(123);
-  }  
+    const { checkout } = this.props;
+    checkout();
+  } 
 
   render() {
     return (

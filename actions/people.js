@@ -19,14 +19,18 @@ export const fetchParticipants = () => {
 			const currentParticipants = getState().people.participants;
 			const participants = Object.values(responseJson).sort((a, b) => a.firstName - b.firstName);
 
-			if (Object.keys(currentParticipants).length === 0 ||
-				currentParticipants.some((ele, idx, arr) => !isEqual(ele, participants[idx])))
-			{
-				dispatch({
-					type: PEOPLE_ACTIONS.UPDATE_PARTICIPANTS,
-					participants
-				});
-			}
+			// if (Object.keys(currentParticipants).length === 0 ||
+			// 	currentParticipants.some((ele, idx, arr) => !isEqual(ele, participants[idx])))
+			// {
+			// 	dispatch({
+			// 		type: PEOPLE_ACTIONS.UPDATE_PARTICIPANTS,
+			// 		participants
+			// 	});
+			// }
+			dispatch({
+				type: PEOPLE_ACTIONS.UPDATE_PARTICIPANTS,
+				participants
+			});			
 		})
 	}
 }

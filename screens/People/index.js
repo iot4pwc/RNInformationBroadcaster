@@ -142,8 +142,9 @@ class People extends React.Component {
   }
 
   _handleCheckout = () => {
-    console.log(123);
-  }
+    const { checkout } = this.props;
+    checkout();
+  } 
 
   render() {
     return (
@@ -167,6 +168,7 @@ class People extends React.Component {
 People.propTypes = {
   isThisTabOn: PropTypes.bool.isRequired,
   fetchParticipants: PropTypes.func.isRequired,
+  checkout: PropTypes.func.isRequired,
   participants: PropTypes.array.isRequired
 }
 
