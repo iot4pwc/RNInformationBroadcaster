@@ -87,13 +87,15 @@ class People extends React.Component {
     }
   }
 
-  _getHostFirstArray = (participants) => {
+  _getHostFirstArray = (arr) => {
+    let participants = arr.slice();
     for (let idx = 0; idx < participants.length; idx++) {
-      if (participants[idx].isHost) {
-        arraymove(participants, idx, 0);
+      if (participants[idx].is_host) {
+        this.arraymove(participants, idx, 0);
         break;
       }
     }
+    return participants;
   }
 
   arraymove = (arr, fromIdx, toIdx) => {
@@ -148,7 +150,7 @@ class People extends React.Component {
       <View style={{flex: 1}}>
         <ScrollView style={styles.scrollPanel}>
           <Accordion 
-            sections={this.props.participants}
+            sections={this._getHostFirstArray(this.props.participants)}
             renderHeader={this._renderHeader}
             renderContent={this._renderContent}
           />
