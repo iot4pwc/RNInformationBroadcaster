@@ -20,7 +20,7 @@ configureStore = (initialState) => {
 const store = configureStore(undefined);
 persistStore(store, {
   storage: AsyncStorage,
-  blacklist: ['welcome', 'profile']
+  blacklist: ['profile']
 });
 
 class Root extends Component {

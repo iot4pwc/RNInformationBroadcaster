@@ -42,7 +42,7 @@ class Welcome extends React.Component {
           <Text style={styles.checkinText}>CHECK IN</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={this._handleOnPress(false)}
+          onPress={this._handleOnPress(true)}
           style={styles.hostCheckin}
         >
           <Text style={styles.checkinText}>CHECK IN AS HOST</Text>

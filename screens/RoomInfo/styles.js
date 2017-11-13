@@ -11,7 +11,7 @@ export default StyleSheet.create({
   	marginTop: 10,
   	marginBottom: 10,
   	paddingLeft: 15,
-  	fontSize: 14,
+  	fontSize: 18,
   	color: 'black'
   },
   divider: {

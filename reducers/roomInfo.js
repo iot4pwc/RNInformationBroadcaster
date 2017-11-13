@@ -13,7 +13,6 @@ export const roomInfo = (state = initialState, action) => {
             return state;
         }  		
 		case ROOMINFO_ACTIONS.UPDATE_ROOMINFO: {
-			console.log(action.roomInfo);
 			return {
 				...state,
 				roomInfo: action.roomInfo
