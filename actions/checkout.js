@@ -6,7 +6,7 @@ export const checkout = () => {
 	return (dispatch, getState) => {
 		const payload = {
 			user_email: getState().profile.profile.user_email,
-			token: getState().room.tokenInfo.host_Token
+			token: getState().room.tokenInfo.host_token
 		}
 		const roomId = getState().room.roomId;
 		const endpoint = `${roomId}/checkout`;

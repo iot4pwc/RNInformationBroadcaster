@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 13 06:45:34 EST 2017
+#Tue Nov 14 16:23:34 EST 2017
 210.set=ANDROID_RESOURCE
 282.file=/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/res/resources-release.ap_/res/color-v11/abc_background_cache_hint_selector_material_light.xml
 14.set=NATIVE_RESOURCE

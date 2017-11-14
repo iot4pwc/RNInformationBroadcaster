@@ -1,4 +1,4 @@
-#Mon Nov 13 06:45:30 EST 2017
+#Tue Nov 14 16:23:30 EST 2017
 base.0=/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/Reddiel/pwc/RNInformationBroadcaster/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex
