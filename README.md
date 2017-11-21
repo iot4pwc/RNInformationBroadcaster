@@ -6,6 +6,8 @@ Install React Native according to https://facebook.github.io/react-native/docs/g
 
 Install yarn package controll tool https://yarnpkg.com/
 
+Clone the repo, under the working directory (RNInformationBroadcaster)
+
 Install the node modules by running:
 ```yarn install```
 
